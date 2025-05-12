@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D2EDC0D82DD2B11200E5D199 /* DumbLauncherWidgetEntryViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2EDC0C22DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2EDC0E52DD2B1DD00E5D199 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EDC0E42DD2B1DD00E5D199 /* WidgetKit.framework */; };
+		D2EDC0E72DD2B1DD00E5D199 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EDC0E62DD2B1DD00E5D199 /* SwiftUI.framework */; };
+		D2EDC0F82DD2B1DF00E5D199 /* DumbLauncherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2EDC0E22DD2B1DD00E5D199 /* DumbLauncherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D2EDC0952DD2AE4300E5D199 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +28,56 @@
 			remoteGlobalIDString = D2EDC0852DD2AE4200E5D199;
 			remoteInfo = DumbLauncher;
 		};
+		D2EDC0D62DD2B11200E5D199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2EDC07E2DD2AE4200E5D199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2EDC0C12DD2B11100E5D199;
+			remoteInfo = DumbLauncherWidgetEntryViewExtension;
+		};
+		D2EDC0F62DD2B1DF00E5D199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2EDC07E2DD2AE4200E5D199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2EDC0E12DD2B1DD00E5D199;
+			remoteInfo = DumbLauncherWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2EDC0D92DD2B11200E5D199 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D2EDC0F82DD2B1DF00E5D199 /* DumbLauncherWidgetExtension.appex in Embed Foundation Extensions */,
+				D2EDC0D82DD2B11200E5D199 /* DumbLauncherWidgetEntryViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D2EDC0862DD2AE4200E5D199 /* DumbLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DumbLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EDC0942DD2AE4300E5D199 /* DumbLauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DumbLauncherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EDC09E2DD2AE4300E5D199 /* DumbLauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DumbLauncherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EDC0C22DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DumbLauncherWidgetEntryViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EDC0E22DD2B1DD00E5D199 /* DumbLauncherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DumbLauncherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EDC0E42DD2B1DD00E5D199 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D2EDC0E62DD2B1DD00E5D199 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D2EDC0F92DD2B1DF00E5D199 /* Exceptions for "DumbLauncherWidget" folder in "DumbLauncherWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D2EDC0E12DD2B1DD00E5D199 /* DumbLauncherWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D2EDC0882DD2AE4200E5D199 /* DumbLauncher */ = {
@@ -43,6 +93,14 @@
 		D2EDC0A12DD2AE4300E5D199 /* DumbLauncherUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DumbLauncherUITests;
+			sourceTree = "<group>";
+		};
+		D2EDC0E82DD2B1DD00E5D199 /* DumbLauncherWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D2EDC0F92DD2B1DF00E5D199 /* Exceptions for "DumbLauncherWidget" folder in "DumbLauncherWidgetExtension" target */,
+			);
+			path = DumbLauncherWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +127,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2EDC0BF2DD2B11100E5D199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EDC0DF2DD2B1DD00E5D199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EDC0E72DD2B1DD00E5D199 /* SwiftUI.framework in Frameworks */,
+				D2EDC0E52DD2B1DD00E5D199 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +152,8 @@
 				D2EDC0882DD2AE4200E5D199 /* DumbLauncher */,
 				D2EDC0972DD2AE4300E5D199 /* DumbLauncherTests */,
 				D2EDC0A12DD2AE4300E5D199 /* DumbLauncherUITests */,
+				D2EDC0E82DD2B1DD00E5D199 /* DumbLauncherWidget */,
+				D2EDC0E32DD2B1DD00E5D199 /* Frameworks */,
 				D2EDC0872DD2AE4200E5D199 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +164,19 @@
 				D2EDC0862DD2AE4200E5D199 /* DumbLauncher.app */,
 				D2EDC0942DD2AE4300E5D199 /* DumbLauncherTests.xctest */,
 				D2EDC09E2DD2AE4300E5D199 /* DumbLauncherUITests.xctest */,
+				D2EDC0C22DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension.appex */,
+				D2EDC0E22DD2B1DD00E5D199 /* DumbLauncherWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D2EDC0E32DD2B1DD00E5D199 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2EDC0E42DD2B1DD00E5D199 /* WidgetKit.framework */,
+				D2EDC0E62DD2B1DD00E5D199 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +189,13 @@
 				D2EDC0822DD2AE4200E5D199 /* Sources */,
 				D2EDC0832DD2AE4200E5D199 /* Frameworks */,
 				D2EDC0842DD2AE4200E5D199 /* Resources */,
+				D2EDC0D92DD2B11200E5D199 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D2EDC0D72DD2B11200E5D199 /* PBXTargetDependency */,
+				D2EDC0F72DD2B1DF00E5D199 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D2EDC0882DD2AE4200E5D199 /* DumbLauncher */,
@@ -163,6 +253,47 @@
 			productReference = D2EDC09E2DD2AE4300E5D199 /* DumbLauncherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D2EDC0C12DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EDC0DD2DD2B11200E5D199 /* Build configuration list for PBXNativeTarget "DumbLauncherWidgetEntryViewExtension" */;
+			buildPhases = (
+				D2EDC0BE2DD2B11100E5D199 /* Sources */,
+				D2EDC0BF2DD2B11100E5D199 /* Frameworks */,
+				D2EDC0C02DD2B11100E5D199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DumbLauncherWidgetEntryViewExtension;
+			packageProductDependencies = (
+			);
+			productName = DumbLauncherWidgetEntryViewExtension;
+			productReference = D2EDC0C22DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D2EDC0E12DD2B1DD00E5D199 /* DumbLauncherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2EDC0FA2DD2B1DF00E5D199 /* Build configuration list for PBXNativeTarget "DumbLauncherWidgetExtension" */;
+			buildPhases = (
+				D2EDC0DE2DD2B1DD00E5D199 /* Sources */,
+				D2EDC0DF2DD2B1DD00E5D199 /* Frameworks */,
+				D2EDC0E02DD2B1DD00E5D199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D2EDC0E82DD2B1DD00E5D199 /* DumbLauncherWidget */,
+			);
+			name = DumbLauncherWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DumbLauncherWidgetExtension;
+			productReference = D2EDC0E22DD2B1DD00E5D199 /* DumbLauncherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +315,12 @@
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = D2EDC0852DD2AE4200E5D199;
 					};
+					D2EDC0C12DD2B11100E5D199 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					D2EDC0E12DD2B1DD00E5D199 = {
+						CreatedOnToolsVersion = 16.3;
+					};
 				};
 			};
 			buildConfigurationList = D2EDC0812DD2AE4200E5D199 /* Build configuration list for PBXProject "DumbLauncher" */;
@@ -203,6 +340,8 @@
 				D2EDC0852DD2AE4200E5D199 /* DumbLauncher */,
 				D2EDC0932DD2AE4300E5D199 /* DumbLauncherTests */,
 				D2EDC09D2DD2AE4300E5D199 /* DumbLauncherUITests */,
+				D2EDC0C12DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension */,
+				D2EDC0E12DD2B1DD00E5D199 /* DumbLauncherWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +362,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D2EDC09C2DD2AE4300E5D199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EDC0C02DD2B11100E5D199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EDC0E02DD2B1DD00E5D199 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +406,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2EDC0BE2DD2B11100E5D199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EDC0DE2DD2B1DD00E5D199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +432,16 @@
 			isa = PBXTargetDependency;
 			target = D2EDC0852DD2AE4200E5D199 /* DumbLauncher */;
 			targetProxy = D2EDC09F2DD2AE4300E5D199 /* PBXContainerItemProxy */;
+		};
+		D2EDC0D72DD2B11200E5D199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2EDC0C12DD2B11100E5D199 /* DumbLauncherWidgetEntryViewExtension */;
+			targetProxy = D2EDC0D62DD2B11200E5D199 /* PBXContainerItemProxy */;
+		};
+		D2EDC0F72DD2B1DF00E5D199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2EDC0E12DD2B1DD00E5D199 /* DumbLauncherWidgetExtension */;
+			targetProxy = D2EDC0F62DD2B1DF00E5D199 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,6 +720,120 @@
 			};
 			name = Release;
 		};
+		D2EDC0DA2DD2B11200E5D199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DumbLauncherWidgetEntryView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DumbLauncherWidgetEntryView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CooperBaltimore.DumbLauncher.DumbLauncherWidgetEntryView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2EDC0DB2DD2B11200E5D199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DumbLauncherWidgetEntryView/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DumbLauncherWidgetEntryView;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CooperBaltimore.DumbLauncher.DumbLauncherWidgetEntryView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2EDC0FB2DD2B1DF00E5D199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DumbLauncherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DumbLauncherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CooperBaltimore.DumbLauncher.DumbLauncherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2EDC0FC2DD2B1DF00E5D199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DumbLauncherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DumbLauncherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CooperBaltimore.DumbLauncher.DumbLauncherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +869,24 @@
 			buildConfigurations = (
 				D2EDC0AF2DD2AE4300E5D199 /* Debug */,
 				D2EDC0B02DD2AE4300E5D199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EDC0DD2DD2B11200E5D199 /* Build configuration list for PBXNativeTarget "DumbLauncherWidgetEntryViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EDC0DA2DD2B11200E5D199 /* Debug */,
+				D2EDC0DB2DD2B11200E5D199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2EDC0FA2DD2B1DF00E5D199 /* Build configuration list for PBXNativeTarget "DumbLauncherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2EDC0FB2DD2B1DF00E5D199 /* Debug */,
+				D2EDC0FC2DD2B1DF00E5D199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

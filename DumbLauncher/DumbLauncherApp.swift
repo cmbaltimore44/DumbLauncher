@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct DumbLauncherApp: App {
+    @AppStorage("selectedBackground") var selectedBackground: String = "#F4F4F4"
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .background(Color(hex: selectedBackground))
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }
